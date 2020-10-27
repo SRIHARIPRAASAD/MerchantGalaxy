@@ -22,7 +22,7 @@ namespace MerchantConsoleApp
 
             // Open the file to read from.
             string readText = File.ReadAllText(path);
-            string[] lines = readText.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string[] lines = readText.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
             Console.WriteLine("--- Input Start ---");
             Console.WriteLine(readText);
             Console.WriteLine("--- Input End ---");
